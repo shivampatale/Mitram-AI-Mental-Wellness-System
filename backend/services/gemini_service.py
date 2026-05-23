@@ -1,17 +1,17 @@
 from google import genai
-
 from dotenv import load_dotenv
-
 import os
 
-
+# Load environment variables
 load_dotenv()
 
+# Get API key from .env
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
+# Create Gemini client
 client = genai.Client(
-    api_key="AIzaSyBmUJEQGEa7d2FBt-OAY0O_hslCacD1Zuk"
+    api_key=GEMINI_API_KEY
 )
-
 
 def generate_ai_response(user_message):
 

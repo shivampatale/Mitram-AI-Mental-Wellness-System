@@ -2,10 +2,14 @@ from fastapi import Depends
 from fastapi import HTTPException
 from fastapi.security import HTTPBearer
 from jose import jwt
+import os
+from dotenv import load_dotenv
 
 security = HTTPBearer()
 
-SECRET_KEY = "mitram_secret_key"
+load_dotenv()
+
+SECRET_KEY = os.getenv("SECRET_KEY")
 
 ALGORITHM = "HS256"
 

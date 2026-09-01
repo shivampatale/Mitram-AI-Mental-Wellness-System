@@ -1,4 +1,4 @@
-### Mitram AI
+# Mitram AI
 AI-Based Mental Wellness Monitoring and Support System
 
 ## Tech Stack
